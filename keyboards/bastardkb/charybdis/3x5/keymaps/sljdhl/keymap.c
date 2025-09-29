@@ -138,7 +138,7 @@ static uint16_t auto_pointer_layer_timer = 0;
  */
 #define LAYOUT_LAYER_NUMERAL                                                                  \
     KC_1,    KC_2,    KC_3,    KC_4, KC_5,                 KC_6,    KC_7,    KC_8,    KC_9,    KC_0, \
-    ______________HOME_ROW_GACS_L______________,           KC_MINS, LSHFT(KC_EQL), KC_EQL, KC_RBRC, LSFT(KC_NUHS),  \
+    ______________HOME_ROW_GACS_L______________,           KC_MINS, LSFT(KC_EQL), KC_EQL, KC_RBRC, LSFT(KC_NUHS),  \
     RALT(KC_NUBS), XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX,     XXXXXXX, XXXXXXX, KC_COMM, KC_DOT, KC_SLSH, \
                        KC_DOT,    KC_0, KC_MINS, XXXXXXX, _______
 
@@ -152,7 +152,7 @@ static uint16_t auto_pointer_layer_timer = 0;
 #define LAYOUT_LAYER_SYMBOLS                                                                  \
     LSFT(KC_1), LSFT(KC_2), LSFT(KC_3), LSFT(KC_4), LSFT(KC_5),     LSFT(KC_6),    LSFT(KC_7), LSFT(KC_8),    LSFT(KC_9),    LSFT(KC_0), \
     XXXXXXX,  RALT(KC_2), RALT(KC_3), RALT(KC_4), RALT(KC_5),       LSFT(KC_MINS), XXXXXXX,    RALT(KC_RBRC), LSFT(KC_RBRC), KC_NUHS, \
-    KC_NUBS, LSFT(KC_NUBS),   XXXXXXX, XXXXXXX, XXXXXXX,            RALT(KC_7),    ALT(KC_0),  RALT(KC_8),    RALT(KC_8),    RALT(KC_MINS),\
+    KC_NUBS, LSFT(KC_NUBS),   XXXXXXX, XXXXXXX, XXXXXXX,            RALT(KC_7),    LALT(KC_0), RALT(KC_8),    RALT(KC_8),    RALT(KC_MINS),\
                       KC_LPRN, KC_RPRN, KC_UNDS,                    _______, XXXXXXX
 
 /**
