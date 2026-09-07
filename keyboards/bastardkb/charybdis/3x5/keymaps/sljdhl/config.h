@@ -14,23 +14,35 @@
  * You should have received a copy of the GNU General Public License
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
+
 #pragma once
 
 #ifdef VIA_ENABLE
-/* VIA configuration. */
 #    define DYNAMIC_KEYMAP_LAYER_COUNT 7
-#endif // VIA_ENABLE
+#endif
 
 #ifndef __arm__
-/* Disable unused features. */
 #    define NO_ACTION_ONESHOT
-#endif // __arm__
+#endif
 
-/* Charybdis-specific features. */
+/*
+ * Pointer layer.
+ * LAYER_POINTER is layer 4 in keymap.c.
+ */
+#ifdef AUTO_MOUSE_DEFAULT_LAYER
+#    undef AUTO_MOUSE_DEFAULT_LAYER
+#endif
+#define AUTO_MOUSE_DEFAULT_LAYER 4
 
-#ifdef POINTING_DEVICE_ENABLE
-// Automatically enable the pointer layer when moving the trackball.  See also:
-// - `CHARYBDIS_AUTO_POINTER_LAYER_TRIGGER_TIMEOUT_MS`
-// - `CHARYBDIS_AUTO_POINTER_LAYER_TRIGGER_THRESHOLD`
-// #define CHARYBDIS_AUTO_POINTER_LAYER_TRIGGER_ENABLE
-#endif // POINTING_DEVICE_ENABLE
+/*
+ * Used by BastardKB's pointing-device module for DPI indication.
+ */
+#ifdef LED_DPI_INDICATOR_INDEX
+#    undef LED_DPI_INDICATOR_INDEX
+#endif
+#define LED_DPI_INDICATOR_INDEX 0
+
+#ifdef RGBLIGHT_LED_COUNT
+#    undef RGBLIGHT_LED_COUNT
+#endif
+#define RGBLIGHT_LED_COUNT 36
