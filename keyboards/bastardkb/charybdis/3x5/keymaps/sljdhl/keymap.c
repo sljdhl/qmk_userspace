@@ -103,7 +103,7 @@ static uint16_t auto_pointer_layer_timer = 0;
  * symmetrical to accomodate the left- and right-hand trackball.
  */
 #define LAYOUT_LAYER_MEDIA                                                                    \
-    XXXXXXX,RGB_RMOD, RGB_TOG, RGB_MOD, XXXXXXX, XXXXXXX,RGB_RMOD, RGB_TOG, RGB_MOD, XXXXXXX, \
+    XXXXXXX,UG_PREV, UG_TOGG, UG_NEXT, XXXXXXX, XXXXXXX,  UG_PREV, UG_TOGG, UG_NEXT, XXXXXXX, \
     KC_MPRV, KC_VOLD, KC_MUTE, KC_VOLU, KC_MNXT, KC_MPRV, KC_VOLD, KC_MUTE, KC_VOLU, KC_MNXT, \
     XXXXXXX, XXXXXXX, XXXXXXX,  EE_CLR, QK_BOOT, QK_BOOT,  EE_CLR, XXXXXXX, XXXXXXX, XXXXXXX, \
                       _______, KC_MPLY, KC_MSTP, KC_MSTP, KC_MPLY
@@ -113,7 +113,7 @@ static uint16_t auto_pointer_layer_timer = 0;
     QK_BOOT,  EE_CLR, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX,  EE_CLR, QK_BOOT, \
     ______________HOME_ROW_GACS_L______________, ______________HOME_ROW_GACS_R______________, \
     _______, DRGSCRL, SNIPING, DPI_MOD, DPI_RMOD, S_D_MOD, S_D_RMOD, SNIPING, DRGSCRL, _______, \
-                      KC_BTN2, KC_BTN1, KC_BTN3, KC_BTN3, KC_BTN1
+                      MS_BTN2, MS_BTN1, MS_BTN3, MS_BTN3, MS_BTN1
 
 /**
  * \brief Navigation layer.
@@ -124,7 +124,7 @@ static uint16_t auto_pointer_layer_timer = 0;
  * base layer to avoid having to layer change mid edit and to enable auto-repeat.
  */
 #define LAYOUT_LAYER_NAVIGATION                                                               \
-    _______________DEAD_HALF_ROW_______________,  KC_CAPS, KC_INS, XXXXXXX, XXXXXXX, XXXXXXX,\
+    _______________DEAD_HALF_ROW_______________,  CW_TOGG, KC_INS, XXXXXXX, XXXXXXX, XXXXXXX,\
     ______________HOME_ROW_GACS_L______________,  KC_LEFT, KC_DOWN,  KC_UP, KC_RGHT, KC_PGUP, \
     _______________DEAD_HALF_ROW_______________,  LALT(KC_LEFT), LALT(KC_RGHT), KC_HOME,  KC_END, KC_PGDN, \
                       XXXXXXX, _______, XXXXXXX,  KC_ENT, KC_DEL
@@ -150,10 +150,10 @@ static uint16_t auto_pointer_layer_timer = 0;
  * `KC_RPRN`.
  */
 #define LAYOUT_LAYER_SYMBOLS                                                                  \
-    LSFT(KC_1), LSFT(KC_2), LSFT(KC_3), LSFT(KC_4), LSFT(KC_5),     LSFT(KC_6),    LSFT(KC_7), LSFT(KC_8),    LSFT(KC_9),    LSFT(KC_0), \
-    XXXXXXX,  RALT(KC_2), RALT(KC_3), RALT(KC_4), RALT(KC_5),       LSFT(KC_MINS), XXXXXXX,    RALT(KC_RBRC), LSFT(KC_RBRC), KC_NUHS, \
-    KC_NUBS, LSFT(KC_NUBS),   XXXXXXX, XXXXXXX, XXXXXXX,            RALT(KC_7),    LALT(KC_0), RALT(KC_8),    RALT(KC_8),    RALT(KC_MINS),\
-                      KC_LPRN, KC_RPRN, KC_UNDS,                    _______, XXXXXXX
+    LSFT(KC_1), LSFT(KC_2),    LSFT(KC_3), LSFT(KC_4), LSFT(KC_5),     LSFT(KC_6),    LSFT(KC_7), LSFT(KC_8),    LSFT(KC_9),    LSFT(KC_0), \
+    XXXXXXX,    RALT(KC_2),    RALT(KC_3), RALT(KC_4), RALT(KC_5),     LSFT(KC_MINS), XXXXXXX,    RALT(KC_RBRC), LSFT(KC_RBRC), KC_NUHS, \
+    KC_NUBS,    LSFT(KC_NUBS), KC_LBRC,    KC_SCLN,    XXXXXXX,        RALT(KC_7),    RALT(KC_0), RALT(KC_8),    RALT(KC_9),    RALT(KC_MINS),\
+                      KC_LPRN, KC_RPRN,    KC_UNDS,                    _______, XXXXXXX
 
 /**
  * \brief Add Home Row mod to a layout.
